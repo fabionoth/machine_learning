@@ -2,8 +2,8 @@
 	objetivos
  	1 - import dataset **
  	2 - train a classifier **
- 	3 - predict label for new flower
-	4 - vizualize the tree
+ 	3 - predict label for new flower **
+	4 - vizualize the tree 
 ''' 
 
 #import data 
@@ -25,6 +25,34 @@ test_data = iris.data[test_idx]
 
 clf = tree.DecisionTreeClassifier()
 clf.fit(train_data, train_target)
+
+print test_target
+print clf.predict(test_data)
+
+#viz code
+from sklearn.externals.six import StringIO
+import pydot
+import pydotplus
+
+dot_data = StringIO()
+'''
+tree.export_graphviz(clf,
+			out_file=dot_data,
+			featurenames=iris.feature_names,
+			class_names=iris.target_names,
+			filled=True, rounded=True,
+			impurity=False)
+'''
+tree.export_graphviz(clf, out_file=dot_data,  
+                     feature_names=iris['feature_names'],  
+                     class_names=iris['target_names'],  
+                     filled=True, rounded=True,  
+                     special_characters=True) 
+
+graph = pydotplus.graph_from_dot_data(dot_data.getvalue())
+graph.write_pdf("iris.pdf")
+
+
 
 #print (iris.feature_names)
 #print (iris.target_names)
