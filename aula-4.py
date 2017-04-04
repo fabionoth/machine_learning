@@ -26,3 +26,8 @@ predicitions =  my_classifier.predict(X_test)
 
 from sklearn.metrics import accuracy_score
 print accuracy_score(y_test, predicitions)
+
+'''
+na maioria dos casos para aprendizado supervisionado existe uma funcao onde e posivel dizer como este aprendizado ocorre, este tipo de caso e possivel vizualizar na seguinte ferramenta: 
+** http://playground.tensorflow.org/
+'''
