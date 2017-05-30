@@ -9,9 +9,9 @@ Machine Learning notes and codes of master.
     - 2016 - Censo Escolar
     
         - (x)Docentes files
-        - (_)Matricula files
+        - (X)Matricula files
         - (_)Escolas files
-        - (_)Turmas files
+        - (X)Turmas files
     - 2015 - Censo Escolar
 
 2. (_) Install, Learn and use Eclipse, Controvol and EMF Compare
