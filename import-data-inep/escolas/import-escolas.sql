@@ -1,4 +1,4 @@
-LOAD DATA INFILE '/var/lib/mysql-files/ESCOLAS.CSV' 
+LOAD DATA INFILE '/var/lib/mysql-files/ESCOLAS_.CSV' 
 INTO TABLE tblEscola
 FIELDS TERMINATED BY '|'   
 ENCLOSED BY '"'    

@@ -1,0 +1,1 @@
+-- iconv -c -t UTF-8 < /home/fabio/Development/micro_censo_escolar_2016/DADOS/ESCOLAS.CSV > /home/fabio/Development/micro_censo_escolar_2016/DADOS/ESCOLAS_.CSV
